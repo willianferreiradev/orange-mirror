@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: #ff6d3c3f;
+}
+
+#camera {
+  position: absolute;
+  margin-top: 30px;
+  height: 664px;
+  width: 395px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#camera.flipped {
+  transform: rotateY(180deg);
+}
+
+.mirror {
+  width: 560px;
+  z-index: 2;
+  position: absolute;
+}
+
+.button {
+  height: 40px;
+  left: 0;
+  border: none;
+  background: #ff7043;
+  border-radius: 0 30px 30px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+
+  transform: translateX(-74%);
+  transition: transform 0.3s ease;
+  padding: 1rem;
+}
+
+.button:hover {
+  transform: translateX(0);
+}
+
+.screw {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  height: 56px;
+  margin-top: 10px;
+  margin-left: 3px;
+
+  display: none;
+}
+
+.screw-visible {
+  display: block;
+}
+
+.buttons-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  gap: 0.5rem;
+  left: 0;
+}

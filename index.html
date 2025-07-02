@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+    <title>Espelho Laranja</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="buttons-container">
+        <button class="button" id="flip-button">
+          <span class="text">Inverter imagem</span>
+          <i class="ph ph-arrow-u-down-left"></i>
+        </button>
+        
+        <button class="button" id="screw-button">
+          <span class="text">Adicionar parafuso</span>
+          <i class="ph ph-screwdriver"></i>
+        </button>
+
+        <!-- <button class="reverse" id="screw-button">
+          <span class="text">Donate</span>
+          <i class="ph ph-money"></i>
+        </button> -->
+      </div>
+
+      <video id="camera" autoplay playsinline></video>
+
+      <img class="screw" id="screw" src="./screw.png" />
+
+      <img
+        class="mirror"
+        src="./mirror.png"
+        alt="Imagem de moldura de um espelho laranja"
+      />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
