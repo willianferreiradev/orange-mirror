@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-  />
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>Espelho Laranja</title>
   </head>
   <body>
     <div class="container">
-
       <div class="buttons-container">
         <button class="button" id="flip-button">
           <span class="text">Inverter imagem</span>
           <i class="ph ph-arrow-u-down-left"></i>
         </button>
-        
+
         <button class="button" id="screw-button">
           <span class="text">Adicionar parafuso</span>
           <i class="ph ph-screwdriver"></i>
+        </button>
+
+        <button class="button" id="capture-button">
+          <span class="text">Capturar imagem</span>
+          <i class="ph ph-camera"></i>
         </button>
 
         <!-- <button class="reverse" id="screw-button">
@@ -38,15 +42,16 @@
 
       <video id="camera" class="flipped" autoplay playsinline></video>
 
-      <img class="screw" id="screw" src="./screw.png" />
-
-      <img
-        class="mirror"
-        src="./mirror.png"
-        alt="Imagem de moldura de um espelho laranja"
-      />
+      <div class="mirror-wrapper">
+        <img
+          class="mirror"
+          src="./mirror.png"
+          alt="Imagem de moldura de um espelho laranja"
+        />
+        <img class="screw" id="screw" src="./screw.png" />
+      </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

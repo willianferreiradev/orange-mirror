@@ -26,10 +26,14 @@ body {
   transform: rotateY(180deg);
 }
 
-.mirror {
+.mirror-wrapper {
+  position: relative;
   width: 560px;
   z-index: 2;
-  position: absolute;
+}
+
+.mirror {
+  width: 100%;
 }
 
 .button {
@@ -56,12 +60,9 @@ body {
 
 .screw {
   position: absolute;
-  z-index: 3;
-  top: 0;
+  top: -6px;
+  left: 253px;
   height: 56px;
-  margin-top: 10px;
-  margin-left: 3px;
-
   display: none;
 }
 
